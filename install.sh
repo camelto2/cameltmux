@@ -10,7 +10,7 @@ if [ ! -e "$HOME/.tmux/plugins/tpm" ]; then
 fi
 
 if [ -e "$HOME/.tmux.conf" ]; then
-  printf "Move old tmux config to $HOME/.tmux.conf.backup"
+  printf "Move old tmux config to $HOME/.tmux.conf.backup\n"
   cp -f "$HOME/.tmux.conf" "$HOME/.tmux.conf.backup" 2>/dev/null || true
 fi
 
